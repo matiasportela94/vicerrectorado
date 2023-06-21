@@ -1,0 +1,849 @@
+$azuloscuro: #001b48;
+$azul: #004581;
+$celeste: #018abd;
+$celesteclaro: #97cbdc;
+
+
+
+h4 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin: 5vh 0vw;
+    letter-spacing: 1px;
+    padding: 3vh 0vw;
+    text-align: center;
+    display: table;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: $azul;
+    transform: scale(0, 1);
+    transform-origin: center;
+    transition: transform .25s;
+
+}
+
+h3:hover::after {
+    transform: scale(1, 1);
+}
+
+.titulo {
+    width: 100%;
+    background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
+    display: flex;
+    justify-content: center;
+    color: $azul
+}
+
+nav {
+    background: linear-gradient(to right, $azuloscuro, $celeste);
+    color: white;
+
+    img {
+        height: 8vh;
+        border-radius: 50%;
+        margin-left: 1vw;
+    }
+
+    .listaDropdown {
+        display: flex;
+        justify-content: right;
+        color: white;
+        padding: 0vh 5vw;
+
+        .lista {
+            padding-left: 2vw;
+        }
+    }
+}
+
+.animate__animated .animate__backInLeft {
+    animation-duration: 10s;
+}
+
+.banner {
+    color: white;
+    background: linear-gradient(to right, $azuloscuro, $celeste);
+    padding: 3vh 5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 55vh;
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+    h1 {
+        letter-spacing: 1px;
+    }
+}
+
+#boxTrabajo {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vh 0vw;
+
+    .textoInfo {
+        color: white;
+
+        text-align: start;
+        letter-spacing: 1px;
+
+        margin: 5vh 10vw;
+        color: $azuloscuro;
+        display: flex;
+        flex-direction: row;
+
+        .lineaAzul {
+            width: 1vw;
+            background-color: #001b48;
+            margin: 0vh 2vw;
+
+        }
+
+        h4 {
+            display: table;
+        }
+
+        h4::after {
+            content: "";
+            display: block;
+            height: 3px;
+            background-color: $azul;
+            transform: scale(0, 1);
+            transform-origin: center;
+            transition: transform .25s;
+        }
+
+        h4:hover::after {
+            transform: scale(1, 1);
+        }
+    }
+
+    .boxInfoTrabajo {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .box {
+            box-shadow: 20px 20px 60px #CCCCCC,
+                -20px -20px 60px #ffffff;
+            background-color: #b9d5df;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+            width: 17vw;
+            height: 100%;
+            padding: 2vh 2vw;
+            text-align: center;
+            transition: all 300ms;
+
+            .imgTrabajo {
+                background-color: gray;
+                height: auto;
+                border-radius: 50%;
+
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            .texto {
+                height: auto;
+                margin-top: 10px;
+
+                h5 {
+                    color: $azuloscuro;
+                    text-transform: uppercase;
+                    font-size: medium;
+                    margin: 2vh 0vw;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+    }
+
+}
+
+
+.boxSecciones {
+    display: flex;
+    flex-direction: row;
+    margin: 15vh 10vw;
+    width: 80%;
+    height: 80%;
+    text-transform: uppercase;
+    font-size: medium;
+    letter-spacing: 1px;
+
+
+    a {
+        text-decoration: none;
+        color: $azuloscuro;
+        text-align: center;
+        width: 30vw;
+
+        .boxSeccion {
+            height: 35vh;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            margin: 0px 5px;
+
+            p {
+                background-color: $azuloscuro;
+                color: white;
+                width: 100%;
+                padding: 2px 2px;
+            }
+        }
+
+        .convenio {
+            background-image: none;
+            background: linear-gradient(to right, $azuloscuro, $celeste);
+        }
+
+        .movilidad {
+            background-image: url(multimedia/movilidad.png);
+            background-size: cover;
+        }
+
+        .becas {
+            background-image: url(multimedia/becas.png);
+            background-size: cover;
+        }
+
+
+        .redes {
+            background: linear-gradient(to right, $celesteclaro, #b9d5df);
+        }
+
+        .convenio:hover {
+            background-image: url(multimedia/convenio.png);
+            background-size: cover;
+        }
+
+        .movilidad:hover {
+            background-image: none;
+            background: linear-gradient(to right, $azuloscuro, $azul);
+        }
+
+        .becas:hover {
+            background-image: none;
+            background: linear-gradient(to right, $celeste, $celesteclaro);
+        }
+
+        .redes:hover {
+            background-image: url(multimedia/redes.png);
+            background-size: cover;
+        }
+    }
+
+    a:hover {
+        color: white;
+    }
+
+}
+
+#boxNovedades {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh 0vw;
+    background: linear-gradient(to right, $azuloscuro, $celeste);
+
+    .tituloNovedades {
+        color: white;
+        width: 100%;
+        padding: 2vh;
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+
+        h4 {
+            display: table;
+        }
+
+        h4::after {
+            content: "";
+            display: block;
+            height: 3px;
+            background-color: white;
+            transform: scale(0, 1);
+            transform-origin: center;
+            transition: transform .25s;
+        }
+
+        h4:hover::after {
+            transform: scale(1, 1);
+        }
+    }
+
+    .boxInfoNovedades {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+        .boxNov {
+            background-color: #edf5f5;
+            padding: 4vh 2vw;
+            width: 22vw;
+            margin: 50px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 4px 0px rgba(0, 0, 0, 0.20);
+
+
+            .imgNovedades {
+                background-color: gray;
+                height: auto;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .texto {
+                text-align: center;
+
+                .boton {
+                    background-color: $azul;
+                    color: white;
+                }
+
+                h5 {
+                    color: $azul;
+                    text-transform: uppercase;
+                    font-size: small;
+                    letter-spacing: 1px;
+                    margin: 3vh 0vw;
+                }
+
+            }
+        }
+
+        .boxNov:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+#boxRedesInternacionales {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10vh 0vw;
+
+    .tituloRedes {
+        margin: 5vh;
+        height: 8vh;
+        color: $azuloscuro;
+    }
+
+    .boxRedes {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0vh 1vw;
+
+        .boxRed {
+            width: 10vw;
+            height: auto;
+            margin: 0vh 3vw;
+        }
+
+        .boxRed:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+}
+
+/* convenio */
+.boxConvenio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    color: $azul;
+
+    .boxMapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 3vh 5vw;
+
+
+        iframe {
+            box-shadow:
+                inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgb(255, 255, 255),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            margin: 5vh;
+        }
+
+        p {
+            letter-spacing: 1px;
+        }
+
+        .btnBuscador {
+            background-color: $azuloscuro;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 2vh 2vw;
+
+        }
+
+        .btnBuscador:hover {
+            background-color: $celesteclaro;
+            color: $azuloscuro;
+            border: 2px solid $azul;
+        }
+    }
+
+    .conveniosPaises {
+        margin: 5vh 0vw;
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+        padding: 5vh 5vw;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .boxPais {
+        width: 20%;
+        padding: 3vh 3vw;
+        color: $azul;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
+        margin: 0vh 1vw;
+
+        .btnConvenios {
+            background-color: #e0f1f1;
+            color: $azuloscuro;
+
+        }
+
+        h6 {
+            margin-bottom: 2vh;
+        }
+    }
+
+    .boxPais:hover {
+        color: white;
+    }
+
+    .btnConvenios:hover {
+        background-color: $celesteclaro;
+
+    }
+
+    .espanol:hover {
+        background-image: url(multimedia/espanol.png);
+        background-size: cover;
+    }
+
+    .ingles:hover {
+        background-image: url(multimedia/ingles.png);
+        background-size: cover;
+    }
+
+    .portugues:hover {
+        background-image: url(multimedia/portugues.png);
+        background-size: cover;
+    }
+
+    .frances:hover {
+        background-image: url(multimedia/frances.png);
+        background-size: cover;
+    }
+
+    .deutsche:hover {
+        background-image: url(multimedia/deutsche.png);
+        background-size: cover;
+    }
+
+}
+
+/*movilidad*/
+#boxMovilidad {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .infoMovilidad {
+
+        p {
+            margin: 10vh 20vw;
+            text-align: center;
+            letter-spacing: 1px;
+            color: $azul;
+        }
+    }
+
+    .boxInfoPrograma {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .boxPrograma {
+            background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
+            padding: 3vh 2vw;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 4px 0px rgba(0, 0, 0, 0.20);
+            margin: 2vh 5vw;
+            align-items: center;
+            height: 40%;
+
+            .infoLogoInfo {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+
+                .logoPrograma {
+                    padding: 2vh 3vw;
+                    color: $azuloscuro;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    font-size: x-large;
+                }
+            }
+
+            .leerMasIndex {
+                margin-top: 3vh;
+
+                .boton {
+                    background-color: $azuloscuro;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    h5 {
+        color: $azuloscuro;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 10vh;
+        width: 100%;
+        text-align: center;
+        padding: 2vh 2vw;
+        background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
+    }
+
+    .texto {
+        text-align: center;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 10vh 0vw;
+
+        .nombre {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0vh 5vw;
+
+            .mail {
+                letter-spacing: 1px;
+                font-size: small;
+            }
+        }
+
+        img {
+            height: 15vh;
+            border-radius: 50%;
+            margin-bottom: 2vh;
+        }
+
+    }
+}
+
+/* becas */
+
+.boxBecasInternacionales {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0vw;
+    align-items: center;
+
+    .texto {
+        text-align: center;
+        margin: 5vh 3vw;
+        color: $azuloscuro;
+        letter-spacing: 1px;
+        width: 50%;
+
+        .btnBecas {
+            margin-top: 5vh;
+            background-color: $azuloscuro;
+            color: white;
+            letter-spacing: 1px;
+            padding: 1vh 1vw;
+            border: none;
+        }
+
+        .btnBecas:hover {
+            background-color: $celesteclaro;
+            color: $azul;
+            border: 2px solid $azul;
+        }
+    }
+
+    .boxBecas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5vh 3vw;
+        width: 50%;
+
+        h5 {
+            color: $azuloscuro;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            text-align: center;
+            padding: 2vh 2vw;
+            background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
+        }
+
+        .boletinBecas {
+            display: flex;
+            flex-direction: row;
+            margin: 10vh 10vw;
+            width: 100%;
+            height: 80%;
+
+            .boletin {
+                width: 30vw;
+                padding: 4vh 4vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
+                margin: 0vh 1vw;
+            }
+        }
+    }
+}
+
+footer {
+    background: linear-gradient(to right, $azuloscuro, $celeste);
+    color: white;
+    height: 100%;
+    padding: 8vh 5vw;
+    text-align: center;
+}
+
+@media (max-width: 430px) {
+
+    .banner {
+        height: 90vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .listaDropdown {
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 5vh 0vw;
+        width: 100%;
+
+        .lista {
+            padding-left: 0vw;
+        }
+    }
+
+    #boxTrabajo {
+
+        .boxInfoTrabajo {
+            flex-direction: column;
+            align-items: center;
+
+            .box {
+                padding: 2vh 5vw;
+                min-width: 50vw;
+            }
+        }
+    }
+
+    .boxSecciones {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        a {
+            margin: 5px 0px;
+
+
+            .boxSeccion {
+                width: 60vw;
+            }
+        }
+    }
+
+
+    #boxNovedades {
+        .boxInfoNovedades {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .boxNov {
+            min-width: 50vw;
+            justify-content: center;
+            margin: 0px 0px;
+        }
+    }
+
+    .convenio {
+        .conveniosPaises {
+            flex-direction: column;
+            align-items: center;
+
+            .boxPais {
+                padding: 2vh 0vw;
+            }
+        }
+    }
+
+    .boxBecasInternacionales {
+        .texto {
+            width: 75%;
+        }
+
+        .boxBecas {
+            width: 75%;
+
+            .boletinBecas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5vh 0vw;
+
+                .boletin {
+                    margin-bottom: 2vh;
+                    width: 45vw;
+                }
+            }
+        }
+    }
+
+    #boxRedesInternacionales {
+        .boxRedes {
+            flex-direction: column;
+
+            .boxRed {
+                width: 25vw;
+            }
+        }
+    }
+
+    #boxMovilidad {
+        .boxInfoPrograma {
+            flex-direction: column;
+        }
+
+        .texto {
+            flex-direction: column;
+
+            .nombre {
+                margin-bottom: 4vh;
+            }
+        }
+    }
+
+    .boxConvenio {
+        .boxMapa {
+            iframe {
+                width: 75%;
+                height: auto;
+            }
+
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: 0vh 4vw;
+        }
+
+        .conveniosPaises {
+            flex-direction: column;
+
+            width: 65vw;
+
+            .boxPais {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    footer {
+        padding: 10vh 15vw;
+    }
+
+}

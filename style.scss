@@ -36,34 +36,13 @@ h3:hover::after {
     transform: scale(1, 1);
 }
 
+
 .titulo {
     width: 100%;
     background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
     display: flex;
     justify-content: center;
     color: $azul
-}
-
-nav {
-    background: linear-gradient(to right, $azuloscuro, $celeste);
-    color: white;
-
-    img {
-        height: 8vh;
-        border-radius: 50%;
-        margin-left: 1vw;
-    }
-
-    .listaDropdown {
-        display: flex;
-        justify-content: right;
-        color: white;
-        padding: 0vh 5vw;
-
-        .lista {
-            padding-left: 2vw;
-        }
-    }
 }
 
 .animate__animated .animate__backInLeft {
@@ -701,21 +680,35 @@ footer {
         justify-content: center;
     }
 
+    .boxSecciones {
+        display: none;
+    }
+
 }
 
 @media (max-width: 750px) {
 
-    .listaDropdown {
-        display: flex;
-        justify-content: center;
-        color: white;
-        padding: 5vh 0vw;
-        width: 100%;
+    /*
 
-        .lista {
-            padding-left: 0vw;
+    .barraNavegadora {
+
+        .listaDropdown {
+            text-align: center;
+            color: white;
+            padding: 5vh 0vw;
+            width: 100vw;
+
+            ul {
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+            }
+
+            .lista {
+                padding-left: 0vw;
+            }
         }
-    }
+    } */
 
     #boxTrabajo {
 
@@ -799,7 +792,7 @@ footer {
             flex-direction: column;
 
             .boxRed {
-                width: 25vw;
+                width: 70vw;
             }
         }
     }

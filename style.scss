@@ -338,11 +338,6 @@ nav {
         }
 
         .becas {
-            background: linear-gradient(to right, $celeste, $celeste);
-        }
-
-
-        .redes {
             background: linear-gradient(to right, $celeste, $celesteclaro);
         }
 
@@ -359,12 +354,6 @@ nav {
         }
 
         .becas:hover {
-            background-image: url(multimedia/becas.png);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .redes:hover {
             background-image: url(multimedia/redes.png);
             background-size: cover;
             background-position: center;

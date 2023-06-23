@@ -384,11 +384,6 @@ nav .listaDropdown .listaNavbar .lista .sublista li a:hover {
 }
 
 .boxSecciones a .becas {
-  background: -webkit-gradient(linear, left top, right top, from(#018abd), to(#018abd));
-  background: linear-gradient(to right, #018abd, #018abd);
-}
-
-.boxSecciones a .redes {
   background: -webkit-gradient(linear, left top, right top, from(#018abd), to(#97cbdc));
   background: linear-gradient(to right, #018abd, #97cbdc);
 }
@@ -406,12 +401,6 @@ nav .listaDropdown .listaNavbar .lista .sublista li a:hover {
 }
 
 .boxSecciones a .becas:hover {
-  background-image: url(multimedia/becas.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.boxSecciones a .redes:hover {
   background-image: url(multimedia/redes.png);
   background-size: cover;
   background-position: center;

@@ -3,9 +3,6 @@ $azul: #004581;
 $celeste: #018abd;
 $celesteclaro: #97cbdc;
 
-$breakpoint:992px;
-
-
 h4 {
     color: white;
     text-transform: uppercase;
@@ -57,7 +54,7 @@ nav {
                 padding-left: 2vw;
 
                 .sublista {
-                    background-color: #7f94cda8;
+                    background-color: #7f94cd;
                     text-align: center;
                     border: none;
                     padding: 0px 0px;
@@ -90,7 +87,7 @@ nav {
     background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
     display: flex;
     justify-content: center;
-    color: $azul
+    color: $azul;
 }
 
 .animate__animated .animate__backInLeft {
@@ -820,19 +817,19 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 5vh auto;
-        height: 100%;    
-    
+        height: 100%;
+
         a {
             width: 100vw;
             margin: 1vh 0vw;
 
             .boxSeccion {
-        
+
                 height: 15vh;
             }
 
         }
-    }    
+    }
 
     /*
 
@@ -928,9 +925,9 @@ footer {
     #boxMovilidad {
 
         .infoMovilidad {
-p {
-    margin: 8vh 8vw;
-}
+            p {
+                margin: 8vh 8vw;
+            }
         }
 
         .boxInfoPrograma {

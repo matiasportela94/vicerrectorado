@@ -33,6 +33,51 @@ h3:hover::after {
           transform: scale(1, 1);
 }
 
+nav {
+  background: -webkit-gradient(linear, left top, right top, from(#001b48), to(#018abd));
+  background: linear-gradient(to right, #001b48, #018abd);
+  color: white;
+}
+
+nav img {
+  height: 8vh;
+  border-radius: 50%;
+  margin-left: 1vw;
+}
+
+nav .listaDropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  color: white;
+  padding: 0vh 5vw;
+}
+
+nav .listaDropdown .listaNavbar .lista {
+  padding-left: 2vw;
+}
+
+nav .listaDropdown .listaNavbar .lista .sublista {
+  background-color: #7f94cd;
+  text-align: center;
+  border: none;
+  padding: 0px 0px;
+}
+
+nav .listaDropdown .listaNavbar .lista .sublista li a {
+  padding: 1vh 1vw;
+  color: #001b48;
+  border-bottom: solid 1px #001b48;
+}
+
+nav .listaDropdown .listaNavbar .lista .sublista li a:hover {
+  background-color: #7f94cda8;
+  color: white;
+}
+
 .titulo {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#97cbdc), to(#d6dde0));
@@ -206,6 +251,85 @@ h3:hover::after {
           transform: scale(1.05);
 }
 
+/*
+.boxSecciones {
+    display: flex;
+    flex-direction: row;
+    margin: 15vh 10vw;
+    width: 80%;
+    height: 80%;
+    text-transform: uppercase;
+    font-size: medium;
+    letter-spacing: 1px;
+
+
+    a {
+        text-decoration: none;
+        color: $azuloscuro;
+        text-align: center;
+        width: 30vw;
+
+        .boxSeccion {
+            height: 35vh;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            margin: 0px 5px;
+
+            p {
+                background-color: $azuloscuro;
+                color: white;
+                width: 100%;
+                padding: 2px 2px;
+            }
+        }
+
+        .convenio {
+            background-image: none;
+            background: linear-gradient(to right, $azuloscuro, $celeste);
+        }
+
+        .movilidad {
+            background-image: url(multimedia/movilidad.png);
+            background-size: cover;
+        }
+
+        .becas {
+            background-image: url(multimedia/becas.png);
+            background-size: cover;
+        }
+
+
+        .redes {
+            background: linear-gradient(to right, $celesteclaro, #b9d5df);
+        }
+
+        .convenio:hover {
+            background-image: url(multimedia/convenio.png);
+            background-size: cover;
+        }
+
+        .movilidad:hover {
+            background-image: none;
+            background: linear-gradient(to right, $azuloscuro, $azul);
+        }
+
+        .becas:hover {
+            background-image: none;
+            background: linear-gradient(to right, $celeste, $celesteclaro);
+        }
+
+        .redes:hover {
+            background-image: url(multimedia/redes.png);
+            background-size: cover;
+        }
+    }
+
+    a:hover {
+        color: white;
+    }
+
+}*/
 .boxSecciones {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,13 +354,13 @@ h3:hover::after {
 }
 
 .boxSecciones a .boxSeccion {
-  height: 35vh;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -244,57 +368,57 @@ h3:hover::after {
 }
 
 .boxSecciones a .boxSeccion p {
-  background-color: #001b48;
   color: white;
   width: 100%;
   padding: 2px 2px;
 }
 
+.boxSecciones a .movilidad {
+  background: -webkit-gradient(linear, left top, right top, from(#001b48), to(#004581));
+  background: linear-gradient(to right, #001b48, #004581);
+}
+
 .boxSecciones a .convenio {
-  background-image: none;
   background: -webkit-gradient(linear, left top, right top, from(#001b48), to(#018abd));
   background: linear-gradient(to right, #001b48, #018abd);
 }
 
-.boxSecciones a .movilidad {
-  background-image: url(multimedia/movilidad.png);
-  background-size: cover;
-}
-
 .boxSecciones a .becas {
-  background-image: url(multimedia/becas.png);
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, right top, from(#018abd), to(#018abd));
+  background: linear-gradient(to right, #018abd, #018abd);
 }
 
 .boxSecciones a .redes {
-  background: -webkit-gradient(linear, left top, right top, from(#97cbdc), to(#b9d5df));
-  background: linear-gradient(to right, #97cbdc, #b9d5df);
+  background: -webkit-gradient(linear, left top, right top, from(#018abd), to(#97cbdc));
+  background: linear-gradient(to right, #018abd, #97cbdc);
 }
 
 .boxSecciones a .convenio:hover {
   background-image: url(multimedia/convenio.png);
   background-size: cover;
+  background-position: center;
 }
 
 .boxSecciones a .movilidad:hover {
-  background-image: none;
-  background: -webkit-gradient(linear, left top, right top, from(#001b48), to(#004581));
-  background: linear-gradient(to right, #001b48, #004581);
+  background-image: url(multimedia/movilidad.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .boxSecciones a .becas:hover {
-  background-image: none;
-  background: -webkit-gradient(linear, left top, right top, from(#018abd), to(#97cbdc));
-  background: linear-gradient(to right, #018abd, #97cbdc);
+  background-image: url(multimedia/becas.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .boxSecciones a .redes:hover {
   background-image: url(multimedia/redes.png);
   background-size: cover;
+  background-position: center;
 }
 
-.boxSecciones a:hover {
-  color: white;
+.boxSecciones a:hover p {
+  background-color: #001b48;
 }
 
 #boxNovedades {
@@ -870,12 +994,30 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .boxSecciones {
-    display: none;
-  }
 }
 
 @media (max-width: 750px) {
+  .boxSecciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5vh auto;
+    height: 100%;
+  }
+  .boxSecciones a {
+    width: 100vw;
+    margin: 1vh 0vw;
+  }
+  .boxSecciones a .boxSeccion {
+    height: 15vh;
+  }
   /*
 
     .barraNavegadora {
@@ -909,26 +1051,6 @@ footer {
   #boxTrabajo .boxInfoTrabajo .box {
     padding: 2vh 5vw;
     min-width: 50vw;
-  }
-  .boxSecciones {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 50%;
-  }
-  .boxSecciones a {
-    margin: 5px 0px;
-  }
-  .boxSecciones a .boxSeccion {
-    width: 60vw;
   }
   #boxNovedades .boxInfoNovedades {
     -webkit-box-orient: vertical;
@@ -988,7 +1110,10 @@ footer {
             flex-direction: column;
   }
   #boxRedesInternacionales .boxRedes .boxRed {
-    width: 70vw;
+    width: 45vw;
+  }
+  #boxMovilidad .infoMovilidad p {
+    margin: 8vh 8vw;
   }
   #boxMovilidad .boxInfoPrograma {
     -webkit-box-orient: vertical;
@@ -1033,6 +1158,13 @@ footer {
   }
   footer {
     padding: 10vh 15vw;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .listaDropdown .listaNavbar {
+    width: 100%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

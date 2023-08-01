@@ -342,19 +342,19 @@ nav {
         }
 
         .convenio:hover {
-            background-image: url(multimedia/convenio.png);
+            background-image: url(/multimedia/convenio.png);
             background-size: cover;
             background-position: center;
         }
 
         .movilidad:hover {
-            background-image: url(multimedia/movilidad.png);
+            background-image: url(/multimedia/movilidad.png);
             background-size: cover;
             background-position: center;
         }
 
         .becas:hover {
-            background-image: url(multimedia/redes.png);
+            background-image: url(/multimedia/redes.png);
             background-size: cover;
             background-position: center;
         }
@@ -505,6 +505,17 @@ nav {
     width: 100%;
     color: $azul;
 
+    h5 {
+        color: $azuloscuro;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 10vh;
+        width: 100%;
+        text-align: center;
+        padding: 2vh 2vw;
+        background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
+    }
+
     .boxMapa {
         display: flex;
         justify-content: center;
@@ -571,9 +582,6 @@ nav {
         }
     }
 
-    .boxPais:hover {
-        color: white;
-    }
 
     .btnConvenios:hover {
         background-color: $celesteclaro;
@@ -581,28 +589,33 @@ nav {
     }
 
     .espanol:hover {
-        background-image: url(multimedia/espanol.png);
+        background-image: url(/multimedia/espanol.png);
         background-size: cover;
+        background-position: center;
     }
 
     .ingles:hover {
-        background-image: url(multimedia/ingles.png);
+        background-image: url(/multimedia/ingles.png);
         background-size: cover;
+        background-position: center;
     }
 
     .portugues:hover {
-        background-image: url(multimedia/portugues.png);
+        background-image: url(/multimedia/portugues.png);
         background-size: cover;
+        background-position: center;
     }
 
     .frances:hover {
-        background-image: url(multimedia/frances.png);
+        background-image: url(/multimedia/frances.png);
         background-size: cover;
+        background-position: center;
     }
 
     .deutsche:hover {
-        background-image: url(multimedia/deutsche.png);
+        background-image: url(/multimedia/deutsche.png);
         background-size: cover;
+        background-position: center;
     }
 
 }

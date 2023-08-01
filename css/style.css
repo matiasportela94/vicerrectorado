@@ -389,19 +389,19 @@ nav .listaDropdown .listaNavbar .lista .sublista li a:hover {
 }
 
 .boxSecciones a .convenio:hover {
-  background-image: url(multimedia/convenio.png);
+  background-image: url(/multimedia/convenio.png);
   background-size: cover;
   background-position: center;
 }
 
 .boxSecciones a .movilidad:hover {
-  background-image: url(multimedia/movilidad.png);
+  background-image: url(/multimedia/movilidad.png);
   background-size: cover;
   background-position: center;
 }
 
 .boxSecciones a .becas:hover {
-  background-image: url(multimedia/redes.png);
+  background-image: url(/multimedia/redes.png);
   background-size: cover;
   background-position: center;
 }
@@ -608,6 +608,18 @@ nav .listaDropdown .listaNavbar .lista .sublista li a:hover {
   color: #004581;
 }
 
+.boxConvenio h5 {
+  color: #001b48;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10vh;
+  width: 100%;
+  text-align: center;
+  padding: 2vh 2vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#97cbdc), to(#d6dde0));
+  background: linear-gradient(to bottom, #97cbdc, #d6dde0);
+}
+
 .boxConvenio .boxMapa {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,37 +695,38 @@ nav .listaDropdown .listaNavbar .lista .sublista li a:hover {
   margin-bottom: 2vh;
 }
 
-.boxConvenio .boxPais:hover {
-  color: white;
-}
-
 .boxConvenio .btnConvenios:hover {
   background-color: #97cbdc;
 }
 
 .boxConvenio .espanol:hover {
-  background-image: url(multimedia/espanol.png);
+  background-image: url(/multimedia/espanol.png);
   background-size: cover;
+  background-position: center;
 }
 
 .boxConvenio .ingles:hover {
-  background-image: url(multimedia/ingles.png);
+  background-image: url(/multimedia/ingles.png);
   background-size: cover;
+  background-position: center;
 }
 
 .boxConvenio .portugues:hover {
-  background-image: url(multimedia/portugues.png);
+  background-image: url(/multimedia/portugues.png);
   background-size: cover;
+  background-position: center;
 }
 
 .boxConvenio .frances:hover {
-  background-image: url(multimedia/frances.png);
+  background-image: url(/multimedia/frances.png);
   background-size: cover;
+  background-position: center;
 }
 
 .boxConvenio .deutsche:hover {
-  background-image: url(multimedia/deutsche.png);
+  background-image: url(/multimedia/deutsche.png);
   background-size: cover;
+  background-position: center;
 }
 
 /*movilidad*/

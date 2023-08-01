@@ -196,8 +196,10 @@ nav .listaDropdown .listaNavbar .lista .sublista li a:hover {
 }
 
 #boxTrabajo .boxInfoTrabajo .box {
-  -webkit-box-shadow: 20px 20px 60px #CCCCCC, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #CCCCCC, -20px -20px 60px #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #CCCCCC,
+ -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #CCCCCC,
+ -20px -20px 60px #ffffff;
   background-color: #b9d5df;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,19 +391,19 @@ nav .listaDropdown .listaNavbar .lista .sublista li a:hover {
 }
 
 .boxSecciones a .convenio:hover {
-  background-image: url(/multimedia/convenio.png);
+  background-image: url(../multimedia/convenio.png);
   background-size: cover;
   background-position: center;
 }
 
 .boxSecciones a .movilidad:hover {
-  background-image: url(/multimedia/movilidad.png);
+  background-image: url(../multimedia/movilidad.png);
   background-size: cover;
   background-position: center;
 }
 
 .boxSecciones a .becas:hover {
-  background-image: url(/multimedia/redes.png);
+  background-image: url(../multimedia/redes.png);
   background-size: cover;
   background-position: center;
 }
@@ -700,31 +702,31 @@ nav .listaDropdown .listaNavbar .lista .sublista li a:hover {
 }
 
 .boxConvenio .espanol:hover {
-  background-image: url(/multimedia/espanol.png);
+  background-image: url(../multimedia/espanol.png);
   background-size: cover;
   background-position: center;
 }
 
 .boxConvenio .ingles:hover {
-  background-image: url(/multimedia/ingles.png);
+  background-image: url(../multimedia/ingles.png);
   background-size: cover;
   background-position: center;
 }
 
 .boxConvenio .portugues:hover {
-  background-image: url(/multimedia/portugues.png);
+  background-image: url(../multimedia/portugues.png);
   background-size: cover;
   background-position: center;
 }
 
 .boxConvenio .frances:hover {
-  background-image: url(/multimedia/frances.png);
+  background-image: url(../multimedia/frances.png);
   background-size: cover;
   background-position: center;
 }
 
 .boxConvenio .deutsche:hover {
-  background-image: url(/multimedia/deutsche.png);
+  background-image: url(../multimedia/deutsche.png);
   background-size: cover;
   background-position: center;
 }

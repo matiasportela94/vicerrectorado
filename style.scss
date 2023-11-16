@@ -4,9 +4,13 @@ $celeste: #018abd;
 $celesteclaro: #97cbdc;
 
 h4 {
-    color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
+    width: 100%;
+    padding: 2vh;
+    margin: 5vh 0vw;
+    display: flex;
+    justify-content: center;
 }
 
 h3 {
@@ -33,37 +37,75 @@ h3:hover::after {
     transform: scale(1, 1);
 }
 
+// navbarrrr
+
 nav {
+    width: 100%;
+    height: 15vh;
     background: linear-gradient(to right, $azuloscuro, $celeste);
-    color: white;
 
     img {
-        height: 8vh;
-        border-radius: 50%;
+        height: 13vh;
         margin-left: 1vw;
+    }
+
+    p {
+        color: white;
+        font-size: small;
+        font-weight: 600;
     }
 
     .listaDropdown {
         display: flex;
-        justify-content: right;
-        color: white;
-        padding: 0vh 5vw;
+        justify-content: center;
+        height: 15vh;
+
 
         .listaNavbar {
+
             .lista {
-                padding-left: 2vw;
+                min-width: 15vw;
+
+                a {
+                    color: white;
+                    height: 15vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
+
+                a:hover {
+                    color: white;
+
+                    box-shadow:
+                        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                        0 0 0 0px rgb(255, 255, 255),
+                        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+                }
 
                 .sublista {
-                    background-color: #7f94cd;
-                    text-align: center;
+                    background-color: $azuloscuro;
                     border: none;
-                    padding: 0px 0px;
+                    margin: 0px 0px;
+                    width: 100%;
+
+                    box-shadow:
+                        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                        0 0 0 0px rgb(255, 255, 255),
+                        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 
                     li {
+                        width: 100%;
+
+
                         a {
                             padding: 1vh 1vw;
-                            color: $azuloscuro;
-                            border-bottom: solid 1px $azuloscuro;
+                            color: white;
+                            border-bottom: solid 1px white;
+                            text-align: center;
+                            width: 100%;
+                            height: 8vh;
                         }
 
                         a:hover {
@@ -76,18 +118,28 @@ nav {
                 }
             }
 
+            .idioma {
+                font-weight: 500;
+                letter-spacing: 1px;
+                font-size: small;
+            }
+
         }
 
 
     }
 }
 
+//INICIO
+
+// pagina principal 'banner'
+
 .titulo {
     width: 100%;
-    background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
     display: flex;
     justify-content: center;
     color: $azul;
+    padding-top: 5vh;
 }
 
 .animate__animated .animate__backInLeft {
@@ -96,49 +148,138 @@ nav {
 
 .banner {
     color: white;
-    background: linear-gradient(to right, $azuloscuro, $celeste);
-    padding: 3vh 5vw;
-    background-repeat: no-repeat;
+    padding: 6vh 10vw;
+    background-image: url(../multimedia/UNMDPintro.png);
     background-size: cover;
     display: flex;
     align-items: end;
     justify-content: end;
-    height: 55vh;
+    text-align: end;
+    width: 100%;
+    height: 85vh;
     box-shadow:
         inset 0 -3em 3em rgba(0, 0, 0, 0.1),
         0 0 0 2px rgb(255, 255, 255),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
 
-    h1 {
-        letter-spacing: 1px;
+// misiones y funciones
+
+#textoInfo {
+    color: white;
+    text-align: start;
+    letter-spacing: 1px;
+    padding: 5vh 0vw;
+    margin: 15vh 10vw;
+    color: $azuloscuro;
+    display: flex;
+    flex-direction: row;
+
+    .lineaAzul {
+        width: 1vw;
+        background-color: #001b48;
+        margin: 0vh 2vw;
+    }
+
+
+    h4 {
+        display: table;
+    }
+
+    h4::after {
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: $azuloscuro;
+        transform: scale(0, 1);
+        transform-origin: center;
+        transition: transform .25s;
+        width: 21vw;
+    }
+
+    h4:hover::after {
+        transform: scale(1, 1);
     }
 }
 
-#boxTrabajo {
-    display: flex;
+// convenios
+
+#convenios {
+    padding: 5vh 5vw;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 200;
+    background: linear-gradient(to right, $azuloscuro, $celeste);
     width: 100%;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    padding: 5vh 0vw;
 
-    .textoInfo {
-        color: white;
 
-        text-align: start;
-        letter-spacing: 1px;
+    h4 {
+        font-weight: 400;
 
-        margin: 5vh 10vw;
-        color: $azuloscuro;
+    }
+
+    .boxConvenios {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding: 5vh 0vw;
 
-        .lineaAzul {
-            width: 1vw;
-            background-color: #001b48;
-            margin: 0vh 2vw;
+        img {
+            margin: 0vh 5vw;
+            width: 70%;
+            height: 50vh;
 
         }
+
+        .infoConvenios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0vh 5vw;
+
+            p {
+                text-align: center;
+            }
+
+            .btnBuscador {
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 1vh 2vw;
+                border: 1px solid white;
+            }
+
+            .btnBuscador:hover {
+                border: none;
+                background-color: white;
+                color: $azuloscuro;
+            }
+
+            button {
+                width: 25vw;
+            }
+
+
+        }
+    }
+}
+
+// novedades
+
+#boxNovedades {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh 0vw;
+
+    .tituloNovedades {
+        color: $azuloscuro;
+
 
         h4 {
             display: table;
@@ -148,7 +289,7 @@ nav {
             content: "";
             display: block;
             height: 3px;
-            background-color: $azul;
+            background-color: white;
             transform: scale(0, 1);
             transform-origin: center;
             transition: transform .25s;
@@ -159,34 +300,119 @@ nav {
         }
     }
 
+    .boxInfoNovedades {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+        .boxNov {
+            background-color: #edf5f5;
+            padding: 6vh 2vw;
+            width: 22vw;
+            margin: 5vh 5vw;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 4px 0px rgba(0, 0, 0, 0.20);
+
+
+            .imgNovedades {
+                background-color: gray;
+                height: auto;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .texto {
+                text-align: center;
+
+                .boton {
+                    background-color: $azul;
+                    color: white;
+                }
+
+                h5 {
+                    color: $azul;
+                    text-transform: uppercase;
+                    font-size: small;
+                    letter-spacing: 1px;
+                    margin: 3vh 0vw;
+                }
+
+            }
+        }
+
+        .boxNov:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+// equipo de trabajo
+
+#boxTrabajo {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-weight: 200;
+    padding: 5vh 0vw;
+    background: linear-gradient(to right, $azuloscuro, $celeste);
+
+    .fondoTrabajo {
+        width: 100vw;
+        padding: 2vh 0vw;
+
+        color: white;
+
+        .tituloTrabajo {
+            width: 100vw;
+
+            h4 {
+                font-weight: 400;
+            }
+
+        }
+    }
+
     .boxInfoTrabajo {
         height: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+
 
         .box {
-            box-shadow: 20px 20px 60px #CCCCCC,
-                -20px -20px 60px #ffffff;
-            background-color: #b9d5df;
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 0px rgb(255, 255, 255),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 50px;
+            margin: 4vh 3vw;
             width: 17vw;
             height: 100%;
             padding: 2vh 2vw;
             text-align: center;
             transition: all 300ms;
+            background-color: white;
 
             .imgTrabajo {
-                background-color: gray;
+
                 height: auto;
                 border-radius: 50%;
 
 
                 img {
-                    height: 100%;
-                    width: 100%;
+                    height: 75%;
+                    width: 75%;
                     border-radius: 50%;
                 }
             }
@@ -194,6 +420,7 @@ nav {
             .texto {
                 height: auto;
                 margin-top: 10px;
+                color: $azuloscuro;
 
                 h5 {
                     color: $azuloscuro;
@@ -210,6 +437,7 @@ nav {
 
         .box:hover {
             transform: scale(1.05);
+
         }
     }
 
@@ -295,17 +523,58 @@ nav {
 
 }*/
 
+#mdp {
+    padding: 5vh 5vw;
+    height: 100%;
+    color: $azuloscuro;
+    width: 100%;
+
+    .boxmdp {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 8vh 0vw;
+
+        img {
+            width: 40vw;
+            box-shadow:
+                inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 0px rgb(255, 255, 255),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        }
+
+        .textoMdp {
+            width: 45vw;
+            padding: 0vh 2vw;
+
+            .btnBuscador {
+                color: $azuloscuro;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 1vh 2vw;
+                border: 1px solid $azuloscuro;
+            }
+
+            .btnBuscador:hover {
+                background-color: $azuloscuro;
+                color: white;
+            }
+        }
+    }
+}
+
+//secciones
 
 .boxSecciones {
     display: flex;
     flex-direction: row;
-    margin: 15vh 10vw;
-    width: 80%;
+    padding: 10vh 6vw;
+    width: 100%;
     height: 80%;
     text-transform: uppercase;
     font-size: medium;
     letter-spacing: 1px;
-
 
     a {
         text-decoration: none;
@@ -314,47 +583,66 @@ nav {
         width: 30vw;
 
         .boxSeccion {
-            height: 20vh;
+            height: 15vh;
             display: flex;
             align-items: center;
-            justify-content: center;
             margin: 0px 5px;
-
 
             p {
                 color: white;
                 width: 100%;
+                margin-bottom: 0px;
                 padding: 2px 2px;
             }
 
         }
 
         .movilidad {
-            background: linear-gradient(to right, $azuloscuro, $azul);
+            background: linear-gradient(to right, $azuloscuro);
         }
 
         .convenio {
-            background: linear-gradient(to right, $azuloscuro, $celeste);
+            background: linear-gradient(to right, $azuloscuro, $azul);
         }
 
         .becas {
-            background: linear-gradient(to right, $celeste, $celesteclaro);
+            background: linear-gradient(to right, $azul);
+        }
+
+        .erasmus {
+            background: linear-gradient(to right, $azul, $celeste);
+        }
+
+        .redes {
+            background: linear-gradient(to right, $celeste);
         }
 
         .convenio:hover {
-            background-image: url(/multimedia/convenio.png);
+            background-image: url(../multimedia/convenio.png);
             background-size: cover;
             background-position: center;
         }
 
         .movilidad:hover {
-            background-image: url(/multimedia/movilidad.png);
+            background-image: url(../multimedia/movilidad.png);
             background-size: cover;
             background-position: center;
         }
 
         .becas:hover {
-            background-image: url(/multimedia/redes.png);
+            background-image: url(../multimedia/becas.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .erasmus:hover {
+            background-image: url(../multimedia/erasmus.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .redes:hover {
+            background-image: url(../multimedia/redes.png);
             background-size: cover;
             background-position: center;
         }
@@ -367,94 +655,7 @@ nav {
     }
 }
 
-#boxNovedades {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 5vh 0vw;
-    background: linear-gradient(to right, $azuloscuro, $celeste);
 
-    .tituloNovedades {
-        color: white;
-        width: 100%;
-        padding: 2vh;
-        margin-top: 5vh;
-        display: flex;
-        justify-content: center;
-
-        h4 {
-            display: table;
-        }
-
-        h4::after {
-            content: "";
-            display: block;
-            height: 3px;
-            background-color: white;
-            transform: scale(0, 1);
-            transform-origin: center;
-            transition: transform .25s;
-        }
-
-        h4:hover::after {
-            transform: scale(1, 1);
-        }
-    }
-
-    .boxInfoNovedades {
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-
-        .boxNov {
-            background-color: #edf5f5;
-            padding: 4vh 2vw;
-            width: 22vw;
-            margin: 50px;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 5px 4px 0px rgba(0, 0, 0, 0.20);
-
-
-            .imgNovedades {
-                background-color: gray;
-                height: auto;
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-
-            .texto {
-                text-align: center;
-
-                .boton {
-                    background-color: $azul;
-                    color: white;
-                }
-
-                h5 {
-                    color: $azul;
-                    text-transform: uppercase;
-                    font-size: small;
-                    letter-spacing: 1px;
-                    margin: 3vh 0vw;
-                }
-
-            }
-        }
-
-        .boxNov:hover {
-            transform: scale(1.05);
-        }
-    }
-}
 
 #boxRedesInternacionales {
     display: flex;
@@ -496,60 +697,18 @@ nav {
     }
 }
 
-/* convenio */
-.boxConvenio {
+/* convenio página*/
+
+.boxConvenioSeccion {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: white;
-    width: 100%;
+    width: 100vw;
     color: $azul;
 
-    h5 {
-        color: $azuloscuro;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-top: 10vh;
-        width: 100%;
-        text-align: center;
-        padding: 2vh 2vw;
-        background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
-    }
-
-    .boxMapa {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 3vh 5vw;
-
-
-        iframe {
-            box-shadow:
-                inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-                0 0 0 2px rgb(255, 255, 255),
-                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-            margin: 5vh;
-        }
-
-        p {
-            letter-spacing: 1px;
-        }
-
-        .btnBuscador {
-            background-color: $azuloscuro;
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 2vh 2vw;
-
-        }
-
-        .btnBuscador:hover {
-            background-color: $celesteclaro;
-            color: $azuloscuro;
-            border: 2px solid $azul;
-        }
+    h4 {
+        padding: 5vh 0vw;
     }
 
     .conveniosPaises {
@@ -565,16 +724,22 @@ nav {
     .boxPais {
         width: 20%;
         padding: 3vh 3vw;
-        color: $azul;
+        color: $azuloscuro;
         letter-spacing: 1px;
         text-transform: uppercase;
-        background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
         margin: 0vh 1vw;
+        font-weight: 200;
+        box-shadow:
+            inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+            0 0 0 0px rgb(255, 255, 255),
+            0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
 
         .btnConvenios {
-            background-color: #e0f1f1;
+            border-bottom: solid 1px $azuloscuro;
             color: $azuloscuro;
-
+            width: 10vw;
+            padding: 2vh 0vw;
         }
 
         h6 {
@@ -582,177 +747,83 @@ nav {
         }
     }
 
-
     .btnConvenios:hover {
-        background-color: $celesteclaro;
-
+        background-color: white;
+        border-bottom: none;
     }
 
     .espanol:hover {
-        background-image: url(/multimedia/espanol.png);
+        background-image: url(../multimedia/espanol.png);
         background-size: cover;
         background-position: center;
     }
 
     .ingles:hover {
-        background-image: url(/multimedia/ingles.png);
+        background-image: url(../multimedia/ingles.png);
         background-size: cover;
         background-position: center;
     }
 
     .portugues:hover {
-        background-image: url(/multimedia/portugues.png);
+        background-image: url(../multimedia/portugues.png);
         background-size: cover;
         background-position: center;
     }
 
     .frances:hover {
-        background-image: url(/multimedia/frances.png);
+        background-image: url(../multimedia/frances.png);
         background-size: cover;
         background-position: center;
     }
 
     .deutsche:hover {
-        background-image: url(/multimedia/deutsche.png);
+        background-image: url(../multimedia/aleman.png);
         background-size: cover;
         background-position: center;
     }
 
 }
 
-/*movilidad*/
-#boxMovilidad {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .infoMovilidad {
-
-        p {
-            margin: 10vh 20vw;
-            text-align: center;
-            letter-spacing: 1px;
-            color: $azul;
-        }
-    }
-
-    .boxInfoPrograma {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-
-        .boxPrograma {
-            background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
-            padding: 3vh 2vw;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 5px 4px 0px rgba(0, 0, 0, 0.20);
-            margin: 2vh 5vw;
-            align-items: center;
-            height: 40%;
-
-            .infoLogoInfo {
-
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                text-align: center;
-
-                .logoPrograma {
-                    padding: 2vh 3vw;
-                    color: $azuloscuro;
-                    letter-spacing: 1px;
-                    font-weight: bold;
-                    font-size: x-large;
-                }
-            }
-
-            .leerMasIndex {
-                margin-top: 3vh;
-
-                .boton {
-                    background-color: $azuloscuro;
-                    color: white;
-                }
-            }
-        }
-    }
-
-    h5 {
-        color: $azuloscuro;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-top: 10vh;
-        width: 100%;
-        text-align: center;
-        padding: 2vh 2vw;
-        background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
-    }
-
-    .texto {
-        text-align: center;
-        letter-spacing: 1px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 10vh 0vw;
-
-        .nombre {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 0vh 5vw;
-
-            .mail {
-                letter-spacing: 1px;
-                font-size: small;
-            }
-        }
-
-        img {
-            height: 15vh;
-            border-radius: 50%;
-            margin-bottom: 2vh;
-        }
-
-    }
-}
-
-/* becas */
+/* becas página*/
 
 .boxBecasInternacionales {
     display: flex;
     flex-direction: column;
-    margin: 5vh 0vw;
     align-items: center;
 
     .texto {
         text-align: center;
-        margin: 5vh 3vw;
+        margin: 0vh 3vw;
         color: $azuloscuro;
-        letter-spacing: 1px;
-        width: 50%;
+        width: 100vw;
+        background: linear-gradient(to right, $azuloscuro, $celeste);
+        color: white;
+
+        h4 {
+            color: white;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 5vh 20vw;
+        }
 
         .btnBecas {
             margin-top: 5vh;
-            background-color: $azuloscuro;
+            border: 1px solid white;
             color: white;
             letter-spacing: 1px;
             padding: 1vh 1vw;
-            border: none;
+            margin: 10vh 0vw;
+            font-size: medium;
+            text-transform: uppercase;
         }
 
         .btnBecas:hover {
-            background-color: $celesteclaro;
-            color: $azul;
-            border: 2px solid $azul;
+            background-color: $azuloscuro;
+            color: white;
+            border: none;
+
         }
     }
 
@@ -761,7 +832,7 @@ nav {
         flex-direction: column;
         align-items: center;
         margin: 5vh 3vw;
-        width: 50%;
+        width: 100%;
 
         h5 {
             color: $azuloscuro;
@@ -770,25 +841,119 @@ nav {
             width: 100%;
             text-align: center;
             padding: 2vh 2vw;
-            background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
+
         }
 
         .boletinBecas {
             display: flex;
             flex-direction: row;
-            margin: 10vh 10vw;
+            margin: 15vh 10vw;
             width: 100%;
             height: 80%;
+            justify-content: center;
 
             .boletin {
-                width: 30vw;
-                padding: 4vh 4vw;
+                width: 18vw;
+                padding: 6vh 4vw;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 font-weight: bold;
-                background: linear-gradient(to bottom, $celesteclaro, #d6dde0);
-                margin: 0vh 1vw;
+                box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                    0 0 0 0px rgb(255, 255, 255),
+                    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+                margin: 0vh 3vw;
+                transform: scale(var(--escala, 1));
+                transition: transform 0.25s;
+            }
+
+            .boletin:hover {
+                --escala: 1.2;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/*movilidad página*/
+#boxMovilidad {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, $azuloscuro, $celeste);
+    color: white;
+
+    h3 {
+        color: white;
+    }
+
+    .infoMovilidad {
+
+        p {
+            margin: 10vh 20vw;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.movEntranteySaliente {
+    h4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: $azuloscuro;
+        padding: 5vh 5vw;
+    }
+
+    .boxInfoPrograma {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        padding: 10vh 10vw;
+
+        .boxPrograma {
+            background-color: white;
+            margin: 0vh 1vw;
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 0px rgb(255, 255, 255),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            height: 40%;
+            text-align: center;
+            min-width: 20%;
+
+            .boxMovilidad {
+                display: flex;
+                flex-direction: row;
+                height: 10vh;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+
+                .tituloMovilidad {
+                    padding: 2vh 1vw;
+                    color: $azuloscuro;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .leerMasIndex {
+            margin-top: 3vh;
+
+            .boton {
+                border: 1px solid $azuloscuro;
+                color: $azuloscuro;
+            }
+
+            .boton:hover {
+                background-color: $azuloscuro;
+                color: white;
             }
         }
     }
@@ -798,9 +963,44 @@ footer {
     background: linear-gradient(to right, $azuloscuro, $celeste);
     color: white;
     height: 100%;
+    width: 100%;
     padding: 8vh 5vw;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 1PX;
+
+    .boxFooter {
+        width: 30vw;
+        font-size: small;
+        text-align: center;
+
+        h6 {
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: small;
+        }
+
+        img {
+            height: 5vh;
+            margin: 2px;
+        }
+
+        .boton {
+            font-size: small;
+            border: 1px solid white;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .boton:hover {
+            background-color: white;
+            color: $azuloscuro;
+        }
+    }
 }
+
+//RESPONSIVE
 
 @media (max-width: 430px) {
 
@@ -808,6 +1008,10 @@ footer {
         height: 90vh;
         align-items: center;
         justify-content: center;
+    }
+
+    h4 {
+        text-align: center;
     }
 
 }
@@ -818,7 +1022,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 5vh auto;
+
         height: 100%;
 
         a {
@@ -833,27 +1037,6 @@ footer {
         }
     }
 
-    /*
-
-    .barraNavegadora {
-
-        .listaDropdown {
-            text-align: center;
-            color: white;
-            padding: 5vh 0vw;
-            width: 100vw;
-
-            ul {
-                width: 100vw;
-                display: flex;
-                justify-content: center;
-            }
-
-            .lista {
-                padding-left: 0vw;
-            }
-        }
-    } */
 
     #boxTrabajo {
 
@@ -863,7 +1046,14 @@ footer {
 
             .box {
                 padding: 2vh 5vw;
-                min-width: 50vw;
+                width: 60vw;
+
+                .imgTrabajo {
+                    img {
+                        height: 20vh;
+                        width: auto;
+                    }
+                }
             }
         }
     }
@@ -875,9 +1065,8 @@ footer {
         }
 
         .boxNov {
-            min-width: 50vw;
+            min-width: 60vw;
             justify-content: center;
-            margin: 0px 0px;
         }
     }
 
@@ -946,32 +1135,30 @@ footer {
     }
 
     .boxConvenio {
-        .boxMapa {
-            iframe {
-                width: 75%;
-                height: auto;
-            }
-
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            margin: 0vh 4vw;
-        }
 
         .conveniosPaises {
             flex-direction: column;
-
             width: 65vw;
 
             .boxPais {
                 width: 100%;
-                margin-bottom: 5px;
+                margin: 5vh 0vw;
+
+                .btnConvenios {
+                    width: 30vw;
+                }
             }
         }
     }
 
     footer {
-        padding: 10vh 15vw;
+
+        flex-direction: column-reverse;
+
+        .boxFooter {
+            width: 100%;
+            margin: 2vh 0vw;
+        }
     }
 
 }
@@ -982,9 +1169,76 @@ footer {
             .listaNavbar {
                 width: 100%;
                 text-align: center;
+                background-color: #001b48;
+                height: 100%;
 
 
+                .lista {
+                    background: linear-gradient(to right, $azuloscuro, $celeste);
+                    border-bottom: 1px solid white;
+
+                    a {
+                        color: white;
+                        font-weight: 400;
+                    }
+
+                    a:hover {
+                        color: $azuloscuro;
+                    }
+
+                }
             }
+        }
+    }
+
+    #convenios {
+        .boxConvenios {
+            flex-direction: column-reverse;
+
+            .infoConvenios {
+                button {
+                    width: 50vw;
+                }
+            }
+
+            img {
+                height: auto;
+            }
+
+        }
+    }
+
+    #mdp {
+        .boxmdp {
+            flex-direction: column;
+
+            img {
+                width: 70vw;
+            }
+
+            .textoMdp {
+                width: 70vw;
+                padding: 5vh 0vw;
+                text-align: center;
+            }
+        }
+    }
+
+    .boxConvenioSeccion {
+        .conveniosPaises {
+            flex-direction: column;
+            align-items: center;
+
+            .boxPais {
+                width: 50vw;
+                margin-bottom: 5vh;
+                height: 50vh;
+
+                .btnConvenios {
+                    width: 30vw;
+                }
+            }
+
         }
     }
 }

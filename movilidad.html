@@ -19,13 +19,13 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark barraNavegadora">
+    <nav class="navbar navbar-expand-lg navbar-dark border-bottom">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img
-            src="./multimedia/descarga.png"
+            src="./multimedia/logo.png"
             alt="logo UNMDP"
-            class="animate__animated animate__flipInY"
+            class="animate__animated animate__flipInY logo"
           />
         </a>
         <button
@@ -60,30 +60,14 @@
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="convenio.html#espanol"
-                    >Español</a
+                  <a class="dropdown-item" href="convenio.html"
+                    >Convenios<br />
+                    internacionales</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="convenio.html#english"
-                    >English</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="convenio.html#portugues"
-                    >Portugués</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="convenio.html#frances"
-                    >Francés</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item border-0"
-                    href="convenio.html#deutsche"
-                    >Deutsche</a
+                  <a class="dropdown-item border-0" href="convenio.html#english"
+                    >Modelos de convenio</a
                   >
                 </li>
               </ul>
@@ -100,7 +84,6 @@
                 Becas
               </a>
               <ul
-                id="menuDesplegable"
                 class="dropdown-menu rounded-0 sublista"
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
@@ -109,7 +92,8 @@
                 </li>
                 <li>
                   <a class="dropdown-item border-0" href="becas.html"
-                    >Boletines</a
+                    >Boletín de becas<br />
+                    internacionales</a
                   >
                 </li>
               </ul>
@@ -130,13 +114,11 @@
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="movilidad.html"
-                    >Programa PILA</a
-                  >
+                  <a class="dropdown-item" href="movilidad.html">Entrante</a>
                 </li>
                 <li>
-                  <a class="dropdown-item border-0" href="movilidad.html"
-                    >Programa ESCALA</a
+                  <a class="dropdown-item border-0" href="movilidad.html#saliente"
+                    >Saliente</a
                   >
                 </li>
               </ul>
@@ -150,7 +132,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Redes
+                Redes internacionales
               </a>
               <ul
                 class="dropdown-menu rounded-0 sublista"
@@ -183,6 +165,41 @@
                 </li>
               </ul>
             </li>
+            <li class="nav-item dropdown lista">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Erasmus
+              </a>
+              <ul
+                class="dropdown-menu rounded-0 sublista"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="https://redciun.cin.edu.ar/"
+                    >Erasmus plus</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://aiesad.org/">Aiesad</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item border-0"
+                    href="http://grupomontevideo.org/site/"
+                    >Capacity</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown lista idioma">
+              <a> ESP- ENG </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -202,70 +219,112 @@
           requisitos de cada una de las convocatorias.
         </p>
       </div>
-      <div class="boxInfoPrograma">
-        <div class="boxPrograma">
-          <div class="infoLogoInfo">
-            <div>
-              <p class="logoPrograma">PILA</p>
-              <p>Estudiante 2-2023<br />postulate hasta el 12/5/2023</p>
-              <div class="leerMasIndex">
-                <button type="button" class="btn boton">Más información</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="boxPrograma">
-          <div class="infoLogoInfo">
-            <div>
-              <p class="logoPrograma">ESCALA</p>
-              <p>Gestores y Administradores<br />postulate hasta el 5/5/2023</p>
-              <div class="leerMasIndex">
-                <button type="button" class="btn boton">Más información</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="boxPrograma">
-          <div class="infoLogoInfo">
-            <div>
-              <p class="logoPrograma">PILA</p>
-              <p>Gestores 2-2023<br />postulate hasta el 12/5/2023</p>
-              <div class="leerMasIndex">
-                <button type="button" class="btn boton">Más información</button>
-              </div>
-            </div>
+    </div>
+    <div class="movEntranteySaliente">
+    <h4>entrante</h4>
+    <div class="boxInfoPrograma">
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">requisitos</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
           </div>
         </div>
       </div>
-      <h5>contacto del área</h5>
-      <div class="texto">
-        <div class="nombre">
-          <img src="multimedia/cara2.png" />
-          <p>Veronica Galvan<br />Coordinadora Programa PILA</p>
-          <p class="mail">relacint@mdp.edu.ar</p>
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">estudiante</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
+          </div>
         </div>
-        <div class="nombre">
-          <img src="multimedia/cara.png" />
-          <p>Alan Teruel<br />Coordinador Programa ESCALA</p>
-          <p class="mail">rinternacionalesunmdp@gmail.com</p>
+      </div>
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">docente</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
+          </div>
         </div>
-        <div class="nombre">
-          <img src="multimedia/cara2.png" />
-          <p>María Laura García<br />Trámites Migraciones</p>
-          <p class="mail">proginter.unmdp@gmail.com</p>
+      </div>
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">investigadores</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">gestores</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 class="border-top" id="saliente">saliente</h4>
+    <div class="boxInfoPrograma">
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">requisitos</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">estudiante</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">docente</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">investigadores</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="boxPrograma">
+        <div class="boxMovilidad">
+          <p class="tituloMovilidad m-0">gestores</p>
+          <div class="leerMasIndex m-0">
+            <button type="button" class="btn boton">+</button>
+          </div>
         </div>
       </div>
     </div>
     <footer>
-      <div>
-        <h5>Universidad Nacional de Mar del Plata</h5>
-        <br />
+      <div class="boxFooter">
+        <h6>Universidad Nacional de Mar del Plata</h6>
         <p>Diagonal J. B. Alberdi 2695 (7600) Mar del Plata</p>
       </div>
-      <div>
-        <p>Tel.: 54.0223.492.1705 al 1710 - Fax 54.223.492.1710</p>
-        <p>Lista internos CUMB Mail:webadmin@mdp.edu.ar</p>
+      <div class="boxFooter">
+        <img src="./multimedia/ig.png" />
+        <img src="./multimedia/fb.png" />
+        <img src="./multimedia/tw.png" />
+        <img src="./multimedia/yt.png" />
       </div>
+      <div class="boxFooter">
+        <h6>CONTACTANOS</h6>
+        <p>Tel.: 54.0223.492.1705 al 1710</p>
+        <p>Fax 54.223.492.1710</p>
+        <button type="button" class="btn boton">Envianos un mensaje</button>
+      </div>
+    </div>
     </footer>
 
     <script
@@ -279,6 +338,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-  <!--  
-</div>-->
 </html>

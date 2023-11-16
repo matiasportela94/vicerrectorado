@@ -19,13 +19,13 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark barraNavegadora">
+    <nav class="navbar navbar-expand-lg navbar-dark border-bottom">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img
-            src="./multimedia/descarga.png"
+            src="./multimedia/logo.png"
             alt="logo UNMDP"
-            class="animate__animated animate__flipInY"
+            class="animate__animated animate__flipInY logo"
           />
         </a>
         <button
@@ -60,30 +60,14 @@
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="convenio.html#espanol"
-                    >Español</a
+                  <a class="dropdown-item" href="convenio.html"
+                    >Convenios<br />
+                    internacionales</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="convenio.html#english"
-                    >English</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="convenio.html#portugues"
-                    >Portugués</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="convenio.html#frances"
-                    >Francés</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item border-0"
-                    href="convenio.html#deutsche"
-                    >Deutsche</a
+                  <a class="dropdown-item border-0" href="convenio.html#english"
+                    >Modelos de convenio</a
                   >
                 </li>
               </ul>
@@ -100,7 +84,6 @@
                 Becas
               </a>
               <ul
-                id="menuDesplegable"
                 class="dropdown-menu rounded-0 sublista"
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
@@ -109,7 +92,8 @@
                 </li>
                 <li>
                   <a class="dropdown-item border-0" href="becas.html"
-                    >Boletines</a
+                    >Boletín de becas<br />
+                    internacionales</a
                   >
                 </li>
               </ul>
@@ -130,13 +114,13 @@
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="movilidad.html"
-                    >Programa PILA</a
-                  >
+                  <a class="dropdown-item" href="movilidad.html">Entrante</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="movilidad.html"
-                    >Programa ESCALA</a
+                  <a
+                    class="dropdown-item border-0"
+                    href="movilidad.html#saliente"
+                    >Saliente</a
                   >
                 </li>
               </ul>
@@ -150,7 +134,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Redes
+                Redes internacionales
               </a>
               <ul
                 class="dropdown-menu rounded-0 sublista"
@@ -175,41 +159,75 @@
                   <a class="dropdown-item" href="https://auip.org/es/">Auip</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="https://www.runbo.unlp.edu.ar"
+                  <a
+                    class="dropdown-item border-0"
+                    href="https://www.runbo.unlp.edu.ar"
                     >Runbo</a
                   >
                 </li>
               </ul>
             </li>
+            <li class="nav-item dropdown lista">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Erasmus
+              </a>
+              <ul
+                class="dropdown-menu rounded-0 sublista"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="https://redciun.cin.edu.ar/"
+                    >Erasmus plus</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://aiesad.org/">Aiesad</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item border-0"
+                    href="http://grupomontevideo.org/site/"
+                    >Capacity</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown lista idioma">
+              <a> ESP- ENG </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="boxConvenio">
-      <div class="titulo">
-        <h3>Convenios internacionales</h3>
-      </div>
-      <div class="boxMapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.18104121722!2d-57.55058582417371!3d-37.99623747193039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc03f3134e87%3A0x362e77847e76e46d!2sFacultad%20de%20Derecho%20Universidad%20Nacional%20de%20Mar%20Del%20Plata!5e0!3m2!1ses!2sar!4v1685763615493!5m2!1ses!2sar"
-          width="900"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+    <div class="boxConvenioSeccion">
+      <div id="convenios">
         <div>
-          <p>
-            La UNMDP ha formalizado vínculos con una gran cantidad de
-            Universidades y Centros de Estudio de diversos países del mundo.
-          </p>
-          <button type="button" class="btn btnBuscador btn-sm mt-4">
-            Buscar convenios vigentes
-          </button>
+          <h4>Convenios internacionales</h4>
+        </div>
+        <div class="boxConvenios">
+          <div class="infoConvenios">
+            <p>
+              La UNMDP ha formalizado vínculos con una gran cantidad de
+              Universidades y Centros de Estudio de diversos países del mundo.
+            </p>
+            <button type="button" class="btn btnBuscador btn-sm mt-4">
+              Buscar convenios vigentes
+            </button>
+            <button type="button" class="btn btnBuscador btn-sm mt-4 px-4">
+              Modalidad de convenios
+            </button>
+          </div>
+          <img src="./multimedia/mapamundo.png" />
         </div>
       </div>
-      <h5 class="modelosConvenio">Modelos de convenio</h5>
+      <h4 class="modelosConvenio">Modelos de convenio</h4>
       <section class="conveniosPaises">
         <div class="boxPais espanol" id="espanol">
           <h6>Español</h6>
@@ -268,14 +286,21 @@
       </section>
     </div>
     <footer>
-      <div>
-        <h5>Universidad Nacional de Mar del Plata</h5>
-        <br />
+      <div class="boxFooter">
+        <h6>Universidad Nacional de Mar del Plata</h6>
         <p>Diagonal J. B. Alberdi 2695 (7600) Mar del Plata</p>
       </div>
-      <div>
-        <p>Tel.: 54.0223.492.1705 al 1710 - Fax 54.223.492.1710</p>
-        <p>Lista internos CUMB Mail:webadmin@mdp.edu.ar</p>
+      <div class="boxFooter">
+        <img src="./multimedia/ig.png" />
+        <img src="./multimedia/fb.png" />
+        <img src="./multimedia/tw.png" />
+        <img src="./multimedia/yt.png" />
+      </div>
+      <div class="boxFooter">
+        <h6>CONTACTANOS</h6>
+        <p>Tel.: 54.0223.492.1705 al 1710</p>
+        <p>Fax 54.223.492.1710</p>
+        <button type="button" class="btn boton">Envianos un mensaje</button>
       </div>
     </footer>
 

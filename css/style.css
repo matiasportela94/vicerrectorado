@@ -42,6 +42,10 @@ h3:hover::after {
           transform: scale(1, 1);
 }
 
+.btn a {
+  text-decoration: none;
+}
+
 nav {
   width: 100%;
   height: 15vh;
@@ -278,8 +282,7 @@ nav .listaDropdown .listaNavbar .idioma {
 
 #convenios .boxConvenios .infoConvenios .btnBuscador:hover {
   border: none;
-  background-color: white;
-  color: #001b48;
+  background-color: #001b48;
 }
 
 #convenios .boxConvenios .infoConvenios button {
@@ -465,13 +468,17 @@ nav .listaDropdown .listaNavbar .idioma {
   border: 1px solid white;
   text-align: center;
   font-size: large;
-  width: 40VW;
+  width: 33VW;
   text-decoration: none;
+  margin: 8vh 0vw;
+}
+
+#boxTrabajo .boxInfoTrabajo .btnBuscador a {
+  color: white;
 }
 
 #boxTrabajo .boxInfoTrabajo .btnBuscador:hover {
-  background-color: white;
-  color: #001b48;
+  background-color: #001b48;
   border: 1px solid #001b48;
   text-decoration: none;
 }
@@ -957,6 +964,10 @@ nav .listaDropdown .listaNavbar .idioma {
   text-decoration: none;
 }
 
+.boxBecasInternacionales .texto .btnBecas a {
+  color: white;
+}
+
 .boxBecasInternacionales .texto .btnBecas:hover {
   background-color: #001b48;
   color: white;
@@ -1030,6 +1041,10 @@ nav .listaDropdown .listaNavbar .idioma {
   transition: -webkit-transform 0.25s;
   transition: transform 0.25s;
   transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.boxBecasInternacionales .boxBecas .boletinBecas .boletin a {
+  color: #001b48;
 }
 
 .boxBecasInternacionales .boxBecas .boletinBecas .boletin:hover {
@@ -1276,6 +1291,9 @@ footer .boxFooter .boton:hover {
   .convenio .conveniosPaises .boxPais {
     padding: 2vh 0vw;
   }
+  .boxBecasInternacionales {
+    width: 100vw;
+  }
   .boxBecasInternacionales .texto {
     width: 75%;
   }
@@ -1370,6 +1388,18 @@ footer .boxFooter .boton:hover {
   }
   nav .listaDropdown .listaNavbar .lista a:hover {
     color: #001b48;
+  }
+  #boxTrabajo .fondoTrabajo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #boxTrabajo .boxInfoTrabajo .btnBuscador {
+    width: 60vw;
   }
   #convenios .boxConvenios {
     -webkit-box-orient: vertical;

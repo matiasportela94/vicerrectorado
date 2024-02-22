@@ -37,6 +37,10 @@ h3:hover::after {
     transform: scale(1, 1);
 }
 
+.btn a {
+    text-decoration: none;
+}
+
 // navbarrrr
 
 nav {
@@ -254,8 +258,8 @@ nav {
 
             .btnBuscador:hover {
                 border: none;
-                background-color: white;
-                color: $azuloscuro;
+                background-color: $azuloscuro;
+
             }
 
             button {
@@ -397,13 +401,18 @@ nav {
             border: 1px solid white;
             text-align: center;
             font-size: large;
-            width: 40VW;
+            width: 33VW;
             text-decoration: none;
+            margin: 8vh 0vw;
+        }
+
+        .btnBuscador a {
+            color: white
         }
 
         .btnBuscador:hover {
-            background-color: white;
-            color: $azuloscuro;
+            background-color: $azuloscuro;
+
             border: 1px solid $azuloscuro;
             text-decoration: none;
         }
@@ -839,6 +848,10 @@ nav {
             text-decoration: none;
         }
 
+        .btnBecas a {
+            color: white
+        }
+
         .btnBecas:hover {
             background-color: $azuloscuro;
             color: white;
@@ -890,6 +903,10 @@ nav {
                 margin: 0vh 3vw;
                 transform: scale(var(--escala, 1));
                 transition: transform 0.25s;
+            }
+
+            .boletin a {
+                color: $azuloscuro
             }
 
             .boletin:hover {
@@ -1107,6 +1124,8 @@ footer {
     }
 
     .boxBecasInternacionales {
+        width: 100vw;
+
         .texto {
             width: 75%;
         }
@@ -1215,6 +1234,20 @@ footer {
             }
         }
     }
+
+    #boxTrabajo {
+        .fondoTrabajo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .boxInfoTrabajo {
+            .btnBuscador {
+                width: 60vw;
+            }
+        }
+    }
+
 
     #convenios {
         .boxConvenios {
